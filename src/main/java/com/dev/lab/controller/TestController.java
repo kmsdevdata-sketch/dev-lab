@@ -19,4 +19,9 @@ public class TestController {
         log.info("로그인 됨: {}", user.getAttributes().toString());
         return "로그인됨: " + user.getAttributes().toString();
     }
+
+    @GetMapping
+    public String test() {
+        return "test";
+    }
 }
